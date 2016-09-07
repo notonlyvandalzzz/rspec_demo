@@ -18,4 +18,10 @@ describe Hero do
     expect(hero.power_down).to eq 90
   end
   
+  it "fuul info" do
+    hero = Hero.new 'kenobi'
+
+    expect(hero.hero_info).to eq 'Kenobi has 100 health'
+  end
+
 end
